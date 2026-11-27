@@ -767,10 +767,10 @@
   els.resetBtn.addEventListener("click", () => {
     const ok = window.confirm("작업실의 모든 내용을 지울까요? 되돌릴 수 없습니다.");
     if (!ok) return;
-    state = blankState();
+    state = defaultState();
     persist();
     renderAll();
-    toast("작업실을 비웠어요");
+    toast("작업실을 비웠어요. 기본 바로가기는 그대로 두었습니다.");
   });
 
   /* ---------- theme ---------- */
